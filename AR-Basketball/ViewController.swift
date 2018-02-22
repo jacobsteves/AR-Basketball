@@ -37,7 +37,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             let location = SCNVector3(transform.m41, transform.m42, transform.m43)
             let orientation = SCNVector3(-transform.m31, -transform.m32, -transform.m33)
             let position = location + orientation
-            let ball = SCNNode(geometry: SCNSphere(radius: 0.3))
+            let ball = SCNNode(geometry: SCNSphere(radius: 0.15))
             ball.geometry?.firstMaterial?.diffuse.contents = #imageLiteral(resourceName: "ball")
             ball.position = position
             let body = SCNPhysicsBody(type: .dynamic, shape: SCNPhysicsShape(node: ball))
@@ -64,6 +64,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let yPosition = positionOfPlane.y
         let zPosition = positionOfPlane.z
         basketNode?.position = SCNVector3(xPosition, yPosition, zPosition)
+        basketNode?.physicsBody = SCNPhysicsBody(type: .static, shape: SCNPhysicsShape(node: basketNode!, options: [SCNPhysicsShape.Option.keepAsCompound: true, SCNPhysicsShape.Option.type: SCNPhysicsShape.ShapeType.concavePolyhedron]))
         self.sceneView.scene.rootNode.addChildNode(basketNode!)
     }
     
