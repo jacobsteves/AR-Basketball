@@ -13,7 +13,6 @@
 		0BC550612032683800BFEE02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BC550602032683800BFEE02 /* Assets.xcassets */; };
 		0BC550642032683800BFEE02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BC550622032683800BFEE02 /* LaunchScreen.storyboard */; };
 		0BDBA5C3203D072600650E91 /* Basketball.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BDBA5C2203D072600650E91 /* Basketball.scnassets */; };
-		BEBC24862010A6B9EACD8B3B /* Pods_AR_Basketball.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222320BD87987CE79A99D4C2 /* Pods_AR_Basketball.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +24,6 @@
 		0BC550632032683800BFEE02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BC550652032683800BFEE02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BDBA5C2203D072600650E91 /* Basketball.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Basketball.scnassets; sourceTree = "<group>"; };
-		222320BD87987CE79A99D4C2 /* Pods_AR_Basketball.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AR_Basketball.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7596008AE223B02DF1CB85F9 /* Pods-AR-Basketball.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR-Basketball.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AR-Basketball/Pods-AR-Basketball.debug.xcconfig"; sourceTree = "<group>"; };
-		F423FF4B00B4845AD4E3E667 /* Pods-AR-Basketball.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR-Basketball.release.xcconfig"; path = "Pods/Target Support Files/Pods-AR-Basketball/Pods-AR-Basketball.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +31,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEBC24862010A6B9EACD8B3B /* Pods_AR_Basketball.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,8 +42,6 @@
 			children = (
 				0BC550582032683800BFEE02 /* AR-Basketball */,
 				0BC550572032683800BFEE02 /* Products */,
-				C604060FFA1C5DD06865F63E /* Pods */,
-				29F961C68F11010DEBC157CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,23 +67,6 @@
 			path = "AR-Basketball";
 			sourceTree = "<group>";
 		};
-		29F961C68F11010DEBC157CC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				222320BD87987CE79A99D4C2 /* Pods_AR_Basketball.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C604060FFA1C5DD06865F63E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7596008AE223B02DF1CB85F9 /* Pods-AR-Basketball.debug.xcconfig */,
-				F423FF4B00B4845AD4E3E667 /* Pods-AR-Basketball.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -98,12 +74,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0BC550682032683800BFEE02 /* Build configuration list for PBXNativeTarget "AR-Basketball" */;
 			buildPhases = (
-				A18815B5880EC649BB2F1275 /* [CP] Check Pods Manifest.lock */,
 				0BC550522032683800BFEE02 /* Sources */,
 				0BC550532032683800BFEE02 /* Frameworks */,
 				0BC550542032683800BFEE02 /* Resources */,
-				B049D66698022960E7095A73 /* [CP] Embed Pods Frameworks */,
-				97873AD539F48C2E7B2854BD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -161,60 +134,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		97873AD539F48C2E7B2854BD /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AR-Basketball/Pods-AR-Basketball-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A18815B5880EC649BB2F1275 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AR-Basketball-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B049D66698022960E7095A73 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-AR-Basketball/Pods-AR-Basketball-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Each/Each.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Each.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AR-Basketball/Pods-AR-Basketball-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0BC550522032683800BFEE02 /* Sources */ = {
@@ -357,7 +276,6 @@
 		};
 		0BC550692032683800BFEE02 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7596008AE223B02DF1CB85F9 /* Pods-AR-Basketball.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -374,7 +292,6 @@
 		};
 		0BC5506A2032683800BFEE02 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F423FF4B00B4845AD4E3E667 /* Pods-AR-Basketball.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
